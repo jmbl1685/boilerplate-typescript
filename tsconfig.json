@@ -1,28 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es2016",
     "module": "commonjs",
-    "lib": ["ESNext"],
-
-    "outDir": "./dist",
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "declaration": true,
     "rootDir": "./src",
-
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noImplicitReturns": true,
-
-    "baseUrl": ".",
-    "typeRoots": ["./@types", "./node_modules/@types"],
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-
-    "esModuleInterop": true,
-    "importsNotUsedAsValues": "preserve",
-
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "moduleResolution": "node"
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": [".nyc_output", ".vscode", "coverage", "dist", "node_modules"]
 }
