@@ -14,5 +14,5 @@ RUN npm run build
 
 # COPY "config/.env" "./.env"
 
-EXPOSE 7282
+EXPOSE 3000
 CMD [ "npm", "start" ]

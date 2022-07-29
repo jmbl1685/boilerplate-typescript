@@ -12,5 +12,5 @@ COPY . .
 
 # COPY "config/.env" "./.env"
 
-EXPOSE 7282
+EXPOSE 3000
 CMD [ "npm", "run", "dev" ]
