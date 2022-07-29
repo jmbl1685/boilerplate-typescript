@@ -22,7 +22,9 @@
     "docker-stop:darwin:linux": "docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)"
   },
   "husky": {
-    "pre-commit": "npm run build"
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
   },
   "keywords": [],
   "author": "Juan Batty",
